@@ -36,7 +36,3 @@ jobs:
         tags: ${{ secrets.DOCKER_USERNAME }}/tic-tac-toe:latest
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
-        
-    - name: Run Docker container interactively
-      run: |
-        docker run ${{ secrets.DOCKER_USERNAME }}/tic-tac-toe:latest
