@@ -39,4 +39,4 @@ jobs:
         
     - name: Run Docker container interactively
       run: |
-        docker run -it ${{ secrets.DOCKER_USERNAME }}/tic-tac-toe:latest
+        docker run ${{ secrets.DOCKER_USERNAME }}/tic-tac-toe:latest
