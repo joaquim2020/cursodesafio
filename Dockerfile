@@ -1,11 +1,11 @@
-# Use a imagem base do Python
+# Usa a imagem base do Python
 FROM python:3.9-slim
 
-# Defina o diretório de trabalho
+# Define o diretório de trabalho
 WORKDIR /app
 
-# Copie o script Python para o diretório de trabalho
+# Copia o script Python para o diretório de trabalho
 COPY game.py .
 
-# Execute o script Python
+# Executa o script Python
 CMD ["python", "game.py"]
